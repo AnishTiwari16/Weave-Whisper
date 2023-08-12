@@ -1,3 +1,4 @@
+import { ClerkProvider } from '@clerk/nextjs';
 import { Metadata } from 'next';
 import * as React from 'react';
 
@@ -54,8 +55,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html>
-      <body>{children}</body>
-    </html>
+    <ClerkProvider>
+      <html lang='en'>
+        <body className='bg-[#101010]'>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }
