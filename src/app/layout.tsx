@@ -6,6 +6,8 @@ import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
 
+import NavBar from '@/components/heroSection/NavBar';
+
 import { siteConfig } from '@/constant/config';
 
 // !STARTERCONF Change these default meta
@@ -41,12 +43,12 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/images/og.jpg`],
     // creator: '@th_clarence',
   },
-  // authors: [
-  //   {
-  //     name: 'Theodorus Clarence',
-  //     url: 'https://theodorusclarence.com',
-  //   },
-  // ],
+  authors: [
+    {
+      name: 'Anish Tiwari',
+      url: 'https://anishtiwari.netlify.app/',
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -57,7 +59,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang='en'>
-        <body className='bg-[#101010]'>{children}</body>
+        <body className=' bg-[#101010]'>
+          <NavBar />
+          {children}
+        </body>
       </html>
     </ClerkProvider>
   );
