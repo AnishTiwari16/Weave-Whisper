@@ -4,7 +4,7 @@ import React from 'react';
 
 const NavBar = () => {
   return (
-    <nav className='flex justify-between bg-[#121417] p-5 text-white'>
+    <nav className='flex h-[10vh] justify-between bg-[#121417] p-5 text-white'>
       <div className='my-auto flex'>
         <Image src='/assets/logo.svg' alt='logo' width={28} height={28} />
         <div className='hidden pl-3 text-2xl font-bold md:block'>Threads</div>

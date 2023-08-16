@@ -6,6 +6,7 @@ import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
 
+import LeftSideBar from '@/components/heroSection/LeftSideBar';
 import NavBar from '@/components/heroSection/NavBar';
 
 import { siteConfig } from '@/constant/config';
@@ -61,7 +62,12 @@ export default function RootLayout({
       <html lang='en'>
         <body className=' bg-[#101010]'>
           <NavBar />
-          {children}
+          <main className='flex flex-row'>
+            <div className='bg-[#121417]'>
+              <LeftSideBar />
+            </div>
+            {children}
+          </main>
         </body>
       </html>
     </ClerkProvider>
