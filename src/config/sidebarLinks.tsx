@@ -15,7 +15,7 @@ export const sidebarLinks = [
     route: '/activity',
   },
   {
-    name: 'Create Thread',
+    name: 'Create',
     logo: '/assets/create.svg',
     route: '/create-thread',
   },

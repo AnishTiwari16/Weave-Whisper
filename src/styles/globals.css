@@ -81,6 +81,9 @@
     max-width: 68.75rem;
     @apply mx-auto w-11/12;
   }
+  .bottom-container {
+    @apply absolute bottom-0 flex w-full flex-row justify-between bg-[#10101299] p-5 text-white backdrop-blur-lg;
+  }
 
   .bg-dark a.custom-link {
     @apply border-gray-200 hover:border-gray-200/0;

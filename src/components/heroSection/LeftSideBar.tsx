@@ -9,7 +9,7 @@ import { sidebarLinks } from '@/config/sidebarLinks';
 const LeftSideBar = () => {
   const pathname = usePathname();
   return (
-    <div className='flex h-[90vh] flex-col gap-6 px-5 py-10 text-white'>
+    <div className='flex h-[90vh] flex-col gap-6 px-5 py-10'>
       {sidebarLinks.map((elem, index) => {
         const isActive = pathname === elem.route;
         return (
@@ -17,7 +17,7 @@ const LeftSideBar = () => {
             href={elem.route}
             className={`${
               isActive && 'rounded-lg bg-[#877EFF]'
-            } flex cursor-pointer p-3`}
+            } flex cursor-pointer px-6 py-3`}
             key={index}
           >
             <Image
@@ -25,13 +25,13 @@ const LeftSideBar = () => {
               alt='sidebar-links'
               height={25}
               width={25}
-              className='mr-5'
+              className='lg:mr-5'
             />
-            {elem.name}
+            <p className='hidden lg:block'>{elem.name}</p>
           </Link>
         );
       })}
-      <div className='hidden cursor-pointer px-2 md:block'>
+      <div className='hidden cursor-pointer px-6 py-3 md:block'>
         <SignedIn>
           <SignOutButton>
             <div className='absolute bottom-10 flex'>
@@ -42,7 +42,7 @@ const LeftSideBar = () => {
                 width={25}
                 className='mr-5'
               />
-              Logout
+              <p className='hidden lg:block'>Logout</p>
             </div>
           </SignOutButton>
         </SignedIn>
