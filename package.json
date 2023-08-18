@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.23.2",
+    "@clerk/themes": "^1.7.5",
     "@uploadthing/react": "^5.2.1",
     "clsx": "^1.2.1",
     "lucide-react": "^0.260.0",
