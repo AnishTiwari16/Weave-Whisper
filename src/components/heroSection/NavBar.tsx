@@ -7,7 +7,7 @@ const NavBar = () => {
     <nav className='flex h-[10vh] justify-between bg-[#121417] p-5 text-white'>
       <div className='my-auto flex'>
         <Image src='/assets/logo.svg' alt='logo' width={28} height={28} />
-        <div className='hidden pl-3 text-2xl font-bold md:block'>Threads</div>
+        <div className='hidden pl-3 text-2xl font-bold md:block'>Weave</div>
       </div>
       <div className='my-auto flex'>
         <SignedIn>

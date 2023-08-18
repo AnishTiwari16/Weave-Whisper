@@ -17,7 +17,7 @@ export const sidebarLinks = [
   {
     name: 'Create',
     logo: '/assets/create.svg',
-    route: '/create-thread',
+    route: '/create-weave',
   },
   {
     name: 'Communities',
