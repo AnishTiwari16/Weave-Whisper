@@ -26,7 +26,9 @@ const BottomBar = () => {
               width={20}
               className='mx-auto'
             />
-            <p className='hidden pt-1 sm:block'>{elem.name}</p>
+            <p className='hidden pt-1 text-sm sm:block md:text-base'>
+              {elem.name}
+            </p>
           </Link>
         );
       })}
