@@ -6,11 +6,6 @@ import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
 
-import BottomBar from '@/components/heroSection/BottomBar';
-import LeftSideBar from '@/components/heroSection/LeftSideBar';
-import NavBar from '@/components/heroSection/NavBar';
-import RightSideBar from '@/components/heroSection/RightSideBar';
-
 import { siteConfig } from '@/constant/config';
 
 // !STARTERCONF Change these default meta
@@ -62,19 +57,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang='en'>
-        <body className='bg-[#101010] text-white'>
-          <NavBar />
-          <main className='flex flex-row'>
-            <div className='hidden w-3/12 bg-[#121417] md:block '>
-              <LeftSideBar />
-            </div>
-            <section className='w-full'>{children}</section>
-            <div className='hidden w-6/12 bg-[#121417] lg:block'>
-              <RightSideBar />
-            </div>
-          </main>
-          <BottomBar />
-        </body>
+        <body className='bg-[#101010] text-white'>{children}</body>
       </html>
     </ClerkProvider>
   );

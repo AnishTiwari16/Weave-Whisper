@@ -31,7 +31,7 @@ const LeftSideBar = () => {
           </Link>
         );
       })}
-      <div className='hidden cursor-pointer px-6 py-3 md:block'>
+      <div className='cursor-pointer px-6 py-3'>
         <SignedIn>
           <SignOutButton>
             <div className='absolute bottom-10 flex'>
