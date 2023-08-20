@@ -27,7 +27,7 @@ const LeftSideBar = () => {
               width={25}
               className='lg:mr-5'
             />
-            <p className='hidden lg:block'>{elem.name}</p>
+            <p className='hidden text-sm md:text-base lg:block'>{elem.name}</p>
           </Link>
         );
       })}
@@ -42,7 +42,7 @@ const LeftSideBar = () => {
                 width={25}
                 className='mr-5'
               />
-              <p className='hidden lg:block'>Logout</p>
+              <p className='hidden text-sm md:text-base lg:block'>Logout</p>
             </div>
           </SignOutButton>
         </SignedIn>
