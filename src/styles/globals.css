@@ -44,6 +44,15 @@
   .bg-dark a.custom-link {
     @apply border-gray-200 hover:border-gray-200/0;
   }
+  [type='text']:focus,
+  textarea:focus {
+    border-color: transparent;
+    box-shadow: transparent;
+  }
+
+  [type='file']:focus {
+    outline: 1px solid #e2e8f0;
+  }
 
   /* Class to adjust with sticky footer */
   .min-h-main {
